@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دیزل صالحی | SALEHI DIESEL</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        body {
+            background-color: #050b14;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+            background-image: 
+                linear-gradient(rgba(0, 150, 255, 0.07) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 150, 255, 0.07) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .card-container {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(10, 22, 40, 0.95);
+            border: 2px solid #00d2ff;
+            border-radius: 16px;
+            padding: 25px 20px;
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.25), inset 0 0 15px rgba(0, 210, 255, 0.1);
+            position: relative;
+        }
+
+        .card-container::before, .card-container::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-color: #00d2ff;
+            border-style: solid;
+        }
+        .card-container::before {
+            top: 6px; right: 6px;
+            border-width: 2px 2px 0 0;
+        }
+        .card-container::after {
+            bottom: 6px; left: 6px;
+            border-width: 0 0 2px 2px;
+        }
+
+        .logo-box {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .logo-img {
+            max-width: 140px;
+            height: auto;
+            filter: drop-shadow(0 0 12px rgba(0, 210, 255, 0.6));
+        }
+
+        .header-title {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed rgba(0, 210, 255, 0.3);
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 22px;
+            color: #ffffff;
+            font-weight: 800;
+            text-shadow: 0 0 8px rgba(0, 210, 255, 0.5);
+            margin-bottom: 4px;
+        }
+
+        .en-brand {
+            font-size: 13px;
+            color: #00d2ff;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-top: 8px;
+            line-height: 1.6;
+            background: rgba(0, 210, 255, 0.05);
+            padding: 8px;
+            border-radius: 8px;
+            border-right: 3px solid #00d2ff;
+        }
+
+        .services-tags {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            background: rgba(5, 11, 20, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 210, 255, 0.2);
+            font-size: 11px;
+            color: #38bdf8;
+            text-align: center;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            background: rgba(15, 30, 55, 0.8);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 210, 255, 0.4);
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background: #00d2ff;
+            color: #050b14;
+border-color: #00d2ff;
+            box-shadow: 0 0 18px rgba(0, 210, 255, 0.8);
+        }
+
+        .btn-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-icon {
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        .btn-arrow {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        .address-box {
+            margin-top: 20px;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 12px;
+            color: #cbd5e1;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 10px;
+            color: rgba(0, 210, 255, 0.5);
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="logo-box">
+            <img src="logo.png" alt="دیزل صالحی" class="logo-img" onerror="this.style.display='none'">
+        </div>
+
+        <div class="header-title">
+            <h1>دیزل صالحی</h1>
+            <div class="en-brand">SALEHI DIESEL REPAIR & SERVICE</div>
+            <p class="subtitle">متخصص سیستم سوخت‌رسانی دیزل<br>تامین و تعمیر کلیه سیستم‌های سوخت با بروزترین ابزارآلات</p>
+        </div>
+
+        <div class="services-tags">
+            <span>⚙️ COMMON RAIL</span>
+            <span>💻 ECU DIAGNOSTIC</span>
+            <span>🔧 INJECTORS</span>
+        </div>
+
+        <div class="btn-group">
+            <a href="tel:09124399424" class="btn">
+                <div class="btn-content">
+                    <span class="btn-icon">📱</span>
+                    <span>تماس: ۰۹۱۲۴۳۹۹۴۲۴ (صالحی)</span>
+                </div>
+                <span class="btn-arrow">◀️</span>
+            </a>
+
+            <a href="tel:09120313184" class="btn">
+                <div class="btn-content">
+                    <span class="btn-icon">📱</span>
+                    <span>تماس: ۰۹۱۲۰۳۱۳۱۸۴ (صالحی)</span>
+                </div>
+                <span class="btn-arrow">◀️</span>
+            </a>
+
+            <a href="tel:02133485921" class="btn">
+                <div class="btn-content">
+                    <span class="btn-icon">☎️</span>
+                    <span>تلفن ثابت: ۰۲۱-۳۳۴۸۵۹۲۱</span>
+                </div>
+                <span class="btn-arrow">◀️</span>
+            </a>
+
+            <a href="https://instagram.com/dieselsalehi" target="_blank" class="btn">
+                <div class="btn-content">
+                    <span class="btn-icon">📷</span>
+                    <span>صفحه اینستاگرام (@dieselsalehi)</span>
+                </div>
+                <span class="btn-arrow">◀️</span>
+            </a>
+
+            <a href="https://maps.app.goo.gl/ykMAEQwdfKhud7ha8?g_st=ic" target="_blank" class="btn">
+                <div class="btn-content">
+                    <span class="btn-icon">📍</span>
+                    <span>مسیریابی روی نقشه (گوگل مپ)</span>
+                </div>
+                <span class="btn-arrow">◀️</span>
+            </a>
+        </div>
+
+        <div class="address-box">
+            🏢 <strong>آدرس:</strong> تهران - خیابان خاوران، بعد از گردنه تنباکویی، مقابل کمپانی عقاب اسکانیا
+        </div>
+
+        <div class="footer-note">
+            DIESEL SYSTEM SPECIALIST • DIGITAL CARD
+        </div>
+    </div>
+
+</body>
+</html>
